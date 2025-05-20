@@ -29,8 +29,8 @@ else:
 load_dotenv()
 
 # API Keys
-gemini_api_key = os.getenv("GEMINI_API_KEY")
-serper_api_key = os.getenv("SERPER_API_KEY")
+gemini_api_key = st.secrets("GEMINI_API_KEY")
+serper_api_key = st.secrets("SERPER_API_KEY")
 gemini_model = "gemini-2.5-flash-preview-04-17"
 
 # Configure Gemini
